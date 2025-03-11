@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Xem tài liệu:
+      <a href="http://www.google.com" target="_blank" title="đây là tiêu đề"
+        >Tại đây</a
+      >
+      <!-- target = _blank khi bấm vào sẽ mở tab mới , còn _self là trang hiện tại -->
+    </p>
+
+    <!-- đây là thẻ image -->
+    <img
+      src="https://i.pinimg.com/236x/52/5b/d5/525bd53a019dded63d73a7fcaa322186.jpg"
+      alt="Đã lỗi"
+    />
+    <!-- alt để thông báo khi hình ảnh bị lỗi -->
+
+    <!-- có 2 đường dẫn file path : đường dẫn tuyệt đối và đường dẫn tương đối -->
+    <img src="2.jpg" alt="ảnh về âm binh" width="400px" />
+    <!-- đây là đường dẫn tương đối -->
+
+    <img src="" alt="đây là lụy" width="500px" />
+    <img src="/Frontend-React/bai2/image/2.jpg" alt="" width="500px" />
+    <img src="../1.jpg" alt="đã lỗi" />
+
+    <a href="https://28tech.com.vn/khoa-hoc"
+      ><img
+        src="https://cdn-main.28tech.com.vn/media/core/logo-28tech.svg"
+        alt=""
+    /></a>
+
+    <!-- thẻ video -->
+    <video width="320" height="240" controls loop autoplay muted>
+      <!-- thuộc tính controls để play video -->
+      <!-- thuộc tính loop để tự động lặp lại video -->
+      <!--  thuộc tính autoplay để tự động phát video -->
+      <!--  thuộc tính muted để tắt âm thanh -->
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+      <!-- type chỉ hỗ trợ file mp4,ogg,webm  -->
+    </video>
+
+    <!-- đây là thẻ audio -->
+    <audio controls>
+      <source
+        src=" https://www.w3schools.com/tags/sound.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+  </body>
+</html>
